@@ -12,8 +12,8 @@ import tensorflow as tf
 # Load dataset.
 dftrain = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/train.csv') #training data
 dfeval = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/eval.csv') #testing data
-y_train = dftrain.pop('survived') #idher hum survived ka column traning data sy nikal kr ek variable main dal rehy
-y_eval = dfeval.pop('survived')  #same thing with the testing data
+y_train = dftrain.pop('survived')
+y_eval = dfeval.pop('survived') 
 
 catagorical_columns = ['sex','n_siblings_spouses','parch','class','deck','embark_town','alone']
 numerical_columns = ['age','fare']
